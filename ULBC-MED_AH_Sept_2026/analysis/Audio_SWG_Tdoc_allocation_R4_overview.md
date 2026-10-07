@@ -2,8 +2,11 @@
 
 > 分析对象：`draft/Audio SWG Tdoc allocation R4.docx`。本文件基于 R4 的正文、议题表、状态图例、页眉和脚注整理。技术问题与阅读顺序是后续分析建议，不代表原文已经给出技术结论。初始 overview 仅核对了关联 ZIP 文件名；后续已完成 175/176 正文及 110/156/158 输入的 Step 1 分析，详见下方链接。Step 2 已完成 180 及相关性能贡献分析，Step 3 已按 A–F 完成 ULBC-4 的 18 个技术主题；其余四个主题亦完成，入口见下方。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 - [原文 Markdown](Audio_SWG_Tdoc_allocation_R4_source.md)
-- [原始议题表结构 JSON](Audio_SWG_Tdoc_allocation_R4_structure.json)
+- 本地辅助文件：`Audio_SWG_Tdoc_allocation_R4_structure.json`（原始议题表结构；仅 Markdown 发布不包含该附件）
 - [Step 1：ULBC-1 / ULBC-2 项目范围、阶段与时间线分析](step01_project_plan/Step01_ULBC1_ULBC2_analysis.md)（已完成）
 - [Step 2：ULBC-3 性能要求分析](step02_performance_requirements/Step02_ULBC3_performance_analysis.md)（已完成）
 - [Step 3：ULBC-4 章节清点与分析目录](step03_design_constraints/Step03_ULBC4_chapter_plan.md)（A–F 六份分析已完成，覆盖 18 个技术主题）
@@ -158,29 +161,29 @@ ULBC-1/2/3/4/5/7/8a/9 的对应关系来自 R4 表内标注；R4 未在 4.6 列�
 
 ## 5. 优先读取的编号转移与主干文件
 
-以下路径均为已核对存在的本地文件。ZIP 内存在 clean/redline 或 cl/rm 版本时，后续先读 clean/cl 建立基线，再读标记版了解修改；不能仅凭文件名认为版本内容完全等价。
+以下入口链接改为仓库中可阅读的原文 Markdown。原始 ZIP 位于本地 `doc/`，179 DOCX 位于 `draft/`，本次仅 Markdown 发布不包含它们。ZIP 内存在 clean/redline 或 cl/rm 版本时，先读 clean/cl 建立基线，再读标记版了解修改；不能仅凭文件名认为版本内容完全等价。
 
-| Topic | 推荐入口 | R4 状态 | 本地来源 |
+| Topic | 推荐入口 | R4 状态 | 可阅读来源 |
 |---|---|---|---|
-| 开发概览 | 175 / ULBC-1 | a | [S4aA260175.zip](../doc/S4aA260175.zip) |
-| 时间线 | 176 / ULBC-2 | a | [S4aA260176.zip](../doc/S4aA260176.zip) |
-| 性能要求 | 180 / ULBC-3 | a | [S4aA260180.zip](../doc/S4aA260180.zip) |
-| 设计约束 | 184 / ULBC-4 | a | [S4aA260184.zip](../doc/S4aA260184.zip) |
-| 资格/选拔规则 | 182 / ULBC-5 | a | [S4aA260182.zip](../doc/S4aA260182.zip) |
-| 处理计划 | 128 → 181 / ULBC-7 | a | [S4aA260181.zip](../doc/S4aA260181.zip) |
-| 测试计划 | 157 → 167 / ULBC-8a | a | [S4aA260167.zip](../doc/S4aA260167.zip) |
-| 输出能量验证 | 159 → 168 | a | [S4aA260168.zip](../doc/S4aA260168.zip) |
-| 码率/bundling 切换 | 096 → 164 → 169 | a | [S4aA260169.zip](../doc/S4aA260169.zip) |
-| 测试材料分离 | 105 → 183 | a | [S4aA260183.zip](../doc/S4aA260183.zip) |
-| 实验设计 | 125 → 166 | a | [S4aA260166.zip](../doc/S4aA260166.zip) |
-| 客观评价数据库 | 119 → 177 | a | [S4aA260177.zip](../doc/S4aA260177.zip) |
-| 噪声材料 | 146 → 171；151 m → 171 | a / m | [S4aA260171.zip](../doc/S4aA260171.zip) |
-| 系统集成主干 | 179 / ULBC-9 | n | [S4aA260179 ULBC-9 v0.1.0.docx](../draft/S4aA260179%20ULBC-9%20v0.1.0.docx) |
-| 头部压缩更新 | 098 → 178 | a | [S4aA260178.zip](../doc/S4aA260178.zip) |
-| 头部分析 | 104 → 174 | a | [S4aA260174.zip](../doc/S4aA260174.zip) |
-| 训练数据 | 099 → 170 | a | [S4aA260170.zip](../doc/S4aA260170.zip) |
-| 维护 | 140 → 172 | a | [S4aA260172.zip](../doc/S4aA260172.zip) |
-| 数据要求 | 142 → 173 | a | [S4aA260173.zip](../doc/S4aA260173.zip) |
+| 开发概览 | 175 / ULBC-1 | a | [S4aA260175 原文 Markdown](step01_project_plan/S4aA260175_clean_source.md) |
+| 时间线 | 176 / ULBC-2 | a | [S4aA260176 原文 Markdown](step01_project_plan/S4aA260176_clean_source.md) |
+| 性能要求 | 180 / ULBC-3 | a | [S4aA260180 原文 Markdown](step02_performance_requirements/S4aA260180_source.md) |
+| 设计约束 | 184 / ULBC-4 | a | [S4aA260184 原文 Markdown](step03_design_constraints/S4aA260184_source.md) |
+| 资格/选拔规则 | 182 / ULBC-5 | a | [S4aA260182 原文 Markdown](remaining_topics/sources/S4aA260182_source.md) |
+| 处理计划 | 128 → 181 / ULBC-7 | a | [S4aA260181 原文 Markdown](remaining_topics/sources/S4aA260181_source.md) |
+| 测试计划 | 157 → 167 / ULBC-8a | a | [S4aA260167 原文 Markdown](remaining_topics/sources/S4aA260167_source.md) |
+| 输出能量验证 | 159 → 168 | a | [S4aA260168 原文 Markdown](step02_performance_requirements/S4aA260168_source.md) |
+| 码率/bundling 切换 | 096 → 164 → 169 | a | [S4aA260169 原文 Markdown](step03_design_constraints/S4aA260169_source.md) |
+| 测试材料分离 | 105 → 183 | a | [S4aA260183 原文 Markdown](remaining_topics/sources/S4aA260183_source.md) |
+| 实验设计 | 125 → 166 | a | [S4aA260166 原文 Markdown](remaining_topics/sources/S4aA260166_source.md) |
+| 客观评价数据库 | 119 → 177 | a | [S4aA260177 原文 Markdown](remaining_topics/sources/S4aA260177_source.md) |
+| 噪声材料 | 146 → 171；151 m → 171 | a / m | [S4aA260171 原文 Markdown](remaining_topics/sources/S4aA260171_source.md) |
+| 系统集成主干 | 179 / ULBC-9 | n | [S4aA260179 原文 Markdown](remaining_topics/sources/S4aA260179_source.md) |
+| 头部压缩更新 | 098 → 178 | a | [S4aA260178 原文 Markdown](remaining_topics/sources/S4aA260178_source.md) |
+| 头部分析 | 104 → 174 | a | [S4aA260174 原文 Markdown](remaining_topics/sources/S4aA260174_source.md) |
+| 训练数据 | 099 → 170 | a | [S4aA260170 原文 Markdown](remaining_topics/sources/S4aA260170_source.md) |
+| 维护 | 140 → 172 | a | [S4aA260172 原文 Markdown](remaining_topics/sources/S4aA260172_source.md) |
+| 数据要求 | 142 → 173 | a | [S4aA260173 原文 Markdown](remaining_topics/sources/S4aA260173_source.md) |
 
 还有 `091 → 165 [app]` 的会议日程转移。该项属于会议管理，暂不纳入技术阅读路线。
 
@@ -249,7 +252,7 @@ ULBC-1/2/3/4/5/7/8a/9 的对应关系来自 R4 表内标注；R4 未在 4.6 列�
 - Markdown 是内容与结构转换，未复刻原 DOCX 的颜色、字体或页面布局；本次核对基于 OOXML，没有开展逐页渲染视觉检查。
 - 关联 draft 文件可能是早期版本或 online edits。深入分析优先核对终点编号 ZIP 的版本与正文，避免直接把旧稿内容当成终点版本。
 
-**进度：Step 1 已完成。** 175/176 当前路线为跳过独立 qualification、直接 selection；已记录 LoI/交付物条件、计划时间线与未决项。详见 Step 1 分析。**Step 2 也已完成。** 180 是保留方括号及多套提案的性能要求基线，已建立场景矩阵、来源对照与 16 项追踪表。**Step 3 本轮分析已完成：** 原文 6 个大章、15 个设计约束条目，拆为 18 个技术主题并按 A–F 输出六份 Markdown；3.00 共同读法与依赖放在总索引。保留所有未决门槛和贡献分歧，不将分析完成等同于规范定案。
+**进度：Step 1 已完成。** 175/176 已同意采用的当前工作假设为跳过独立 qualification、直接 selection；已记录 LoI/交付物条件、计划时间线与未决项。详见 Step 1 分析。**Step 2 也已完成。** 180 是保留方括号及多套提案的性能要求基线，已建立场景矩阵、来源对照与 16 项追踪表。**Step 3 本轮分析已完成：** 原文 6 个大章、15 个设计约束条目，拆为 18 个技术主题并按 A–F 输出六份 Markdown；3.00 共同读法与依赖放在总索引。保留所有未决门槛和贡献分歧，不将分析完成等同于规范定案。
 
 
 **本轮新增四主题分析已完成。** 数据集主题覆盖 170/173/183、训练透明度/再生成提案和 172 维护目标；测试主题核对 167/181、166/177/171 及模板残留；规则主题核对 182 和 FoM 输入；传输主题完整读取本地 179 并对照 r1、174/178、124/130 与延期项。分析完成不代表文档中的 TBD/FFS 已解决。

@@ -2,6 +2,9 @@
 
 > 范围：3.01 Sampling Frequency、3.02 Audio bandwidth、3.03 Number of audio channels。主干为 S4aA260184 / ULBC-4 v0.3.0 草稿。贡献提案不自动视为会议结论。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 ## 1. 当前基线
 
 | 主题 | 184 当前文字 | 阅读结论 |
@@ -24,11 +27,13 @@
 
 | 文件 | 主要主张 | 与 184 的关系 |
 |---|---|---|
-| [101，NTT/Panasonic](S4aA260101_source.md) | 单一 32 kHz 接口、内部带宽自由；候选特有转换计入开销 | 双接口和转换排除项没有原样采纳该路线 |
+| [101，NTT/Panasonic](S4aA260101_source.md) | 资格/选拔测试统一 32 kHz 接口、内部采样率及带宽有设计自由；转换开销申报措辞有冲突 | 其建议约束仍写外部 16 或 32 kHz；不能概括为所有场合仅有 32 kHz 接口 |
 | [092，vivo](S4aA260092_source.md) | 32 kHz 接口；WB 要求和 SWB 目标方向 | 带宽方向有联系，接口未原样进入主干 |
 | [118，Huawei](S4aA260118_source.md) | 16 kHz 单接口；WB 选择测试、SWB characterization；先定复杂度 | 单接口未成为当前约束 |
 | [149，Fraunhofer](S4aA260149_source.md) | 双接口、至少 WB | 与当前主干接近 |
 | [161，Lenovo](S4aA260161_source.md) | 强调 16 kHz/WB；可选 32 kHz 能力应合理评测 | 不能覆盖当前 AND 条文 |
+
+101 的 [Proposal 2](S4aA260101_source.md#P040)写转换需 separately 报告并纳入 applicable budget，而[建议表](S4aA260101_source.md#T048-R02-C02)写 separately from constraints；两处介词导致计入/另报边界不一致，不能替作者选定其中一种。184 当前排除 16/32 kHz 重采样的条文应单独读取。
 
 贡献中的复杂度增幅、语音能量比例等属于作者论据，本分析未重现实验，不据此断言某一路线必然更优。
 

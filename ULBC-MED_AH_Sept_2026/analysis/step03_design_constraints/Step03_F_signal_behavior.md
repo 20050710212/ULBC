@@ -2,6 +2,9 @@
 
 > 范围：3.17 Noise suppression and robustness to non-speech input、3.18 Output gain tolerance。连接 ULBC-4 的原则、ULBC-3 的门槛和 ULBC-7 的工具。184 两条均保留未决标记，不能把示例容差当作已通过要求。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 ## 1. 主干状态
 
 | 主题 | 184 的方向 | 未决项 |

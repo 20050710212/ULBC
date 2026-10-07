@@ -1,4 +1,4 @@
-# S4aA26092 — 原文 Markdown（当前修订文本）
+# S4aA260092 — 原文 Markdown（当前修订文本）
 
 > 来源：`S4aA260092 [ULBC-MED] On ULBC Audio Sampling Rate and Audio Frequency Bandwidth Design Constraints.docx`。仅显示当前修订文本，保留方括号、直接格式删除线、批注和单元格合并元数据。接受修订用于读取当前文字，不代表所有条款已定案。定位标记为提取索引，不是原文条款号。
 

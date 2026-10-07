@@ -2,8 +2,11 @@
 
 > 主干：S4aA260180 / ULBC-3 v0.2.0；R4 议题 4.3，标记 `a`。分析日期：2026-10-05。本报告分析本地会议版本，不判断后续版本或实际测试结果。先保留原文的方括号、合并提案与未决点，再建立要求索引。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 - [180 原文 Markdown](S4aA260180_source.md)
-- [180 tracked-before → 当前文字的修订差异](S4aA260180_changes.diff)
+- 本地辅助文件：`S4aA260180_changes.diff`（tracked-before → 当前文字的修订差异；仅 Markdown 发布不包含该附件）
 - [返回总体 Overview](../Audio_SWG_Tdoc_allocation_R4_overview.md)
 
 ## 1. 先读懂这份主干的成熟度
@@ -257,7 +260,7 @@ AFR(%) = 100 × 非 SID 且非 NO DATA 的帧数 / DTX-off 运行时的帧数
 4. **客观判定补齐：** AFR 的 `[x]` 和单位、相同 ptime、能量窗口、衰减阈值与工具版本。
 5. **来源与格式清理：** 主文仍写 Agenda item 7.7，页眉仍标 SA4#137-e / 8 月，但 History 与 R4 对应 9 月 v0.2.0；应以本次编号/正文历史识别来源，不能因旧页眉当成另外一次会议的最终版本。§4.1 的 `[7]`、`[9]` 未在该文件列出完整 References，需回溯 121 等贡献，不能假定参考编号已全局统一。
 
-本次已完成性能要求的结构分析和要求追踪，**没有候选的测量结果可用于判定达标**。下一步进入 **Step 3：184 / ULBC-4 的采样率、音频带宽与决策依赖**，重点与 PR-09、PR-16 和带宽条件交叉核对；随后再分析资源与时延/DTX 约束。
+本次已完成性能要求的结构分析和要求追踪，**没有候选的测量结果可用于判定达标**。Step 3 与规则/测试主题已继续完成，可交叉阅读[ULBC-4 总索引](../step03_design_constraints/Step03_ULBC4_chapter_plan.md)、[选拔规则](../remaining_topics/Topic08_qualification_and_selection.md)及[测试与处理](../remaining_topics/Topic07_testing_and_processing.md)。184 已明确双采样接口、最低 WB、两码率及 80/160 ms bundling 能力；这些设计结论不自动解除 180 的质量门槛、DTX 测试范围或 SWB 要求的未决项。
 
 ### 提取与核对记录
 

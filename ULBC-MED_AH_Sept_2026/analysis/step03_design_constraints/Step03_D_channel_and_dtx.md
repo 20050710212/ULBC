@@ -2,6 +2,9 @@
 
 > 范围：3.13 Jitter buffer management、3.14 Packet loss concealment、3.15 VAD/DTX/CNG 与 SID。本组同时涉及 codec 能力、发送调度和性能测试，需要与 B/E 交叉阅读。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 ## 1. 主干状态
 
 | 主题 | 184 当前状态 | 不能提前认定的内容 |
@@ -64,7 +67,7 @@ codec 层少发比特与无线层少用一次发送机会不是同一个计量�
 
 | 文件 | 提议 | 单位与解读 |
 |---|---|---|
-| [097，vivo](S4aA260097_source.md) | 固定或最多每 320 ms 更新一次 | 提议与最终 frame 长度无关；措辞方案仍需统一 |
+| [097，vivo](S4aA260097_source.md#T033-R01-C02) | 固定每 320 ms 一次，或更新频率不超过每 320 ms 一次（间隔至少 320 ms） | 按最终建议表的 frequency 读，避免把 maximum update rate 误译为最大间隔；不依赖最终 frame 长度 |
 | [117，Huawei](S4aA260117_source.md) | 不频于每 [640] ms 一次 | 以发送节省为主要论据 |
 | [122，Dolby](S4aA260122_source.md) | 1.0 kbit/s [640] ms；1.4 kbit/s [480] ms | 按码率提出不同值 |
 | [134，Fraunhofer](S4aA260134_source.md) | 不频于每 [8] bundled packets 一次 | 80 ms 时 640 ms，160 ms 时 1280 ms |

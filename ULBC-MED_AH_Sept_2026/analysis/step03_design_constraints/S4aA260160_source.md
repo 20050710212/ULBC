@@ -1,6 +1,6 @@
 # S4aA260160 — 原文 Markdown（当前修订文本）
 
-> 来源：`S4aA260160.docx`。仅显示当前修订文本，保留方括号、直接格式删除线、批注和单元格合并元数据。接受修订用于读取当前文字，不代表所有条款已定案。定位标记为提取索引，不是原文条款号。
+> 来源：`S4aA260160.docx`。仅显示当前修订文本，保留方括号、直接格式删除线、批注和单元格合并元数据。接受修订用于读取当前文字，不代表所有条款已定案。定位标记为提取索引，不是原文条款号。2026-10-08 复核时补回 P019 的 OMML 公式，用附近 Proposal 1 同义的可读线性记法表示。
 
 <a id="P000"></a>
 
@@ -64,7 +64,7 @@ In the light of above, a more dynamic metric is necessary to capture all operati
 
 <a id="P019"></a>
 
-RTF can be aggregated as a single metric, , aggregating the encoder and decoder processing time, relative to the processed audio frame duration.
+RTF can be aggregated as a single metric, `RTF = (enc_t + dec_t) / frame_t`, aggregating the encoder and decoder processing time, relative to the processed audio frame duration.
 
 <a id="P020"></a>
 

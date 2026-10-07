@@ -2,6 +2,9 @@
 
 > 对应原 Overview Step 9，覆盖 R4 4.9。本文件将用户所说“系统继承”理解为继承既有 IMS/NB-IoT NTN 架构与规范机制，并分析 ULBC 的系统集成。主干为本地 draft 179 / ULBC-9 v0.1.0，R4 为 n；对照 174/178、109、124、130、112/113 和 Step 3B/D/E。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 ## 1. 本主题的结论
 
 ULBC 需要同时处理 codec payload 和传输头开销。资料描述 IP transport 必须支持、UHRR 路线可选，但 **最终 reduced RTP 格式、动态字段恢复和系统协商仍未冻结**。RoHC 的稳态小头不能代替初始化、恢复或 DTX 后首包预算。
@@ -19,7 +22,7 @@ ULBC 需要同时处理 codec payload 和传输头开销。资料描述 IP trans
 | [124 IP/RoHC](sources/S4aA260124_source.md)、[130 transport](sources/S4aA260130_source.md) | n | IP 的具体评估与较粗预算方案 |
 | [112 delay](sources/S4aA260112_source.md)、[113 DTMF](sources/S4aA260113_source.md) | pp | 延期技术输入，不作为已采纳条件 |
 
-本地没有 179 ZIP，基于明确命名的 draft DOCX 阅读。另有 [179 r1](sources/S4aA260179_draft_r1_source.md)，[差异](sources/S4aA260179_draft_to_r1.diff)显示 r1 简化 transport 描述并删除 applicability 标题；主要开销表与 FFS 仍保留。它是另一 local draft，不凭后缀声称已被会议批准。
+本地没有 179 ZIP，基于明确命名的 draft DOCX 阅读。另有 [179 r1](sources/S4aA260179_draft_r1_source.md)，两份当前正文及本地差异文件 `sources/S4aA260179_draft_to_r1.diff` 显示 r1 简化 transport 描述并删除 applicability 标题；主要开销表与 FFS 仍保留。它是另一 local draft，不凭后缀声称已被会议批准。
 
 ## 3. 系统继承的边界
 
@@ -130,7 +133,7 @@ format definitions、SDP parameters、UHRR/bearer 和 IMS-AGW 集成仍 editor's
 
 [Step 3D / 126](../step03_design_constraints/Step03_D_channel_and_dtx.md)说明调度边界、clock drift、SPS reactivation 及大包可以产生额外到达瞬态。两者观察的对象不同：链路传播/网络抖动与调度后解码端到达变化不能直接替代。
 
-端到端 delay 应分开 codec algorithmic delay（已经含 bundling）、实际处理、调度等待、传播/网络、JBM buffering；不能把 B 重复加两次，或把 112 的小 jitter 假设当成无需 JBM 的证明。
+分析端到端 delay 时建议分别列账 codec algorithmic delay（184 定义首句已包含 bundling）、实际处理、调度等待、传播/网络及 JBM buffering，并确保边界互不重复。184 定义中排除 processing/channel delay 的句子仍带方括号，本段是预算分析建议，不声称完整排除口径已冻结。不能重复加完整 bundling，或把 112 的小 jitter 假设当成无需 JBM 的证明。
 
 ## 8. DTX 的系统节省要按发送机会算
 

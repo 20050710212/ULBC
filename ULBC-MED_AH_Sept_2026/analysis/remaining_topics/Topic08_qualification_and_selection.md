@@ -2,6 +2,9 @@
 
 > 对应原 Overview Step 8，覆盖 R4 4.5。主干为 182 / ULBC-5 v0.0.1，相关输入为 147、093、094、135、150、152，交叉 Step 1 的 175/176、性能主干 180、设计约束 184 和分离文件 183。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 ## 1. 本主题的结论
 
 项目当前工作假设是跳过独立 qualification，直接 selection；候选仍需满足提交、交付及设计约束条件。**182 只给出尚带括号的“两条规则”框架，FoM 及完整程序仍 TBD**，目前不能计算官方排名或声称最多五个候选晋级是现行规则。
@@ -13,7 +16,7 @@
 | 来源 | 明确内容 | 阅读边界 |
 |---|---|---|
 | [Step 1 / 175](../step01_project_plan/Step01_ULBC1_ULBC2_analysis.md) | 按 ULBC-6 完整、及时、合格提供交付物才能参加 selection | 完整 ULBC-6 正文仍未找到 |
-| 同上 / 176 | binding LoI 是候选提交必要条件；计划截止 2026-12-23 | 签 LoI 不强制实际提交，不能以 LoI 数等同候选数 |
+| 同上 / 176 | binding LoI 是候选提交必要条件；当前版本规定最迟 2026-12-23 收到 | 签 LoI 不强制实际提交，不能以 LoI 数等同候选数 |
 | [182](sources/S4aA260182_source.md#P017) | Rule 1 淘汰、Rule 2 FoM 排名框架 | §3 整段括号；具体 FoM TBD |
 | [167](sources/S4aA260167_source.md) | Selection test plan、DCR、非候选 LL | 实验矩阵和细节尚未齐备 |
 
@@ -90,7 +93,7 @@ FoM_final = α × FoM_MOS
 
 ## 7. 094 的权重表及其边界
 
-094 的测试/权重表是嵌入 EMF，普通段落提取不会显示。本轮已渲染并读取[原始表图](sources/094_media/image1.png)，下面是 selection 列的分类汇总：
+094 的测试/权重表是嵌入 EMF，普通段落提取不会显示。本轮复核原始渲染图后，已补入[完整表格文字转录](sources/S4aA260094_source.md#EMF-table-transcription)，供仅有 Markdown 的 GitHub 仓库直接审查。原始图保留于本地 `sources/094_media/image1.png`，以下是 selection 列的分类汇总：
 
 | 每个码率下的类别 | 该码率对应权重 |
 |---|---:|

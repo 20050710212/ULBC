@@ -2,6 +2,9 @@
 
 > 范围：3.16 RTP payload format and header reduction。分析 184 的设计接口及 174/178 的相关贡献；这是 ULBC-4 对传输工作的依赖分析，未替代后续 ULBC-9 的完整格式审查。外部 RFC/TS 的状态按贡献所述引用，本次未在线核验。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 ## 1. 184 已规定什么
 
 [184 对应行](S4aA260184_source.md#T019-R18)要求为 ULBC 指定 RTP payload format，并确定 RTP header reduction 的 essential fields。这一工作要求无括号，但 packetizer 部分仍有括号及编辑问题。

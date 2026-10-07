@@ -1,4 +1,4 @@
-# S4aA26093 — 原文 Markdown（当前修订文本）
+# S4aA260093 — 原文 Markdown（当前修订文本）
 
 > 来源：`S4aA260093 [ULBC-MED] Thoughts on complexity and memory adjusted FoM.docx`。仅显示当前修订文本，保留方括号、直接格式删除线、批注和单元格合并元数据。接受修订用于读取当前文字，不代表所有条款已定案。定位标记为提取索引，不是原文条款号。
 

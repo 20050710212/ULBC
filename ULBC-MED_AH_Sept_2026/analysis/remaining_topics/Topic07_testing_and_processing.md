@@ -2,6 +2,9 @@
 
 > 对应原 Overview Step 7，覆盖 R4 4.7/4.8。主干为 167 / ULBC-8a v0.1.0 和 181 / ULBC-7 v0.2.0；对照 166、177、171、145、114、103，以及材料分离的 183。
 
+> 2026-10-08 评审：已复核结论的证据范围、明确/待定状态及引用；详见[评审记录](../Review_2026-10-08.md)。依据仍是本地 2026 年 9 月材料，不推定后续会议结果。
+
+
 ## 1. 本主题的结论
 
 选择测试已采用 P.800 DCR、非候选实验室，并要求所有候选在同一测试中比较；但 **167 的具体实验矩阵与 181 的处理链尚未形成可直接运行的完整规范**。181 大量继承 EVS 模板，必须按当前 ULBC 参数清理，不能照抄其命令行。
@@ -35,11 +38,13 @@ flowchart TD
   X --> L[非候选实验室 DCR 听测]
   L --> G[原始投票交 GAL]
   G --> S[统计分析与 ULBC 5 规则]
-  D --> O[共同客观 corpus 与工具]
-  O --> S
+  OD[P501 speech baseline 与待定 noise corpus] --> O[共同客观材料的 ULBC 7 处理]
+  C --> O
+  O --> OM[AFR 与 gain 客观测量工具待补齐]
+  OM --> S
 ```
 
-这是处理关系图，不意味着 167 已任命所有实体或 181 已提供所有可执行工具。
+这是处理关系图，不意味着 167 已任命所有实体或 181 已提供所有可执行工具。隐藏主观材料与共同客观 corpus 是两条来源路径；不能把实验室的隐藏 speech/noise 自动当作 P.501 客观数据库，也不能省略客观分支中的候选 codec 处理。
 
 ## 4. 167 中已写出的测试方法
 
@@ -142,7 +147,7 @@ JBM 引入时变播放延迟，181 留有 network simulator 与 decoder trace、
 
 [181 objective corpus](sources/S4aA260181_source.md#P648)已经写入 clean/noisy speech、P.501 baseline、noise TBD；[177 最终段](sources/S4aA260177_source.md#P053)指定 P.501 (04/25) Annex C。
 
-但是 AFR 和 gain measuring 仍只有标题与省略号；不能宣称已经实现了 Step 2 的 pass/fail 或 Step 3F 的能量检查工具。已选 speech baseline 不等于完整数据库、处理链、频带和统计法都冻结。
+但是 AFR 和 gain measuring 仍只有标题与省略号；不能宣称已经实现了 Step 2 的 pass/fail 或 Step 3F 的能量检查工具。177 的最终提案给出明确 speech baseline 方向，但其在 181 中的落实仍位于整体方括号内；不能据此宣称完整数据库、处理链、频带和统计法已冻结。
 
 ## 10. 建议冻结的执行记录
 

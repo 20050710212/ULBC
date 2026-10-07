@@ -1,6 +1,6 @@
-# S4aA26095 — 原文 Markdown（当前修订文本）
+# S4aA260095 — 原文 Markdown（当前修订文本）
 
-> 来源：`S4aA260095 [ULBC-MED] Proposal on RTF-based Complexity Evaluation for ULBC.docx`。仅显示当前修订文本，保留方括号、直接格式删除线、批注和单元格合并元数据。接受修订用于读取当前文字，不代表所有条款已定案。定位标记为提取索引，不是原文条款号。
+> 来源：`S4aA260095 [ULBC-MED] Proposal on RTF-based Complexity Evaluation for ULBC.docx`。仅显示当前修订文本，保留方括号、直接格式删除线、批注和单元格合并元数据。接受修订用于读取当前文字，不代表所有条款已定案。定位标记为提取索引，不是原文条款号。2026-10-08 复核时从 OMML 补回 P022 公式及 P023 变量，使用可读线性记法。
 
 <a id="P000"></a>
 
@@ -82,9 +82,13 @@ RTF is defined here as the CPU execution time required for complete codec proces
 
 For one encoder frame and one decoder frame corresponding to the same audio duration, the combined RTF is defined as:
 
+<a id="P022"></a>
+
+`RTF_i = (T_enc,i + T_dec,i) / T_frame`
+
 <a id="P023"></a>
 
-Here,  and  denote the CPU execution time for complete encoder and decoder processing during evaluation interval i.  includes codec-internal PLC and recovery processing whenever these paths are invoked; their time is not added a second time. The denominator is one frame duration, representing the combined budget for one outgoing encoder stream and one incoming decoder stream.
+Here, T_enc,i and T_dec,i denote the CPU execution time for complete encoder and decoder processing during evaluation interval i. T_dec,i includes codec-internal PLC and recovery processing whenever these paths are invoked; their time is not added a second time. The denominator is one frame duration, representing the combined budget for one outgoing encoder stream and one incoming decoder stream.
 
 <a id="P024"></a>
 
